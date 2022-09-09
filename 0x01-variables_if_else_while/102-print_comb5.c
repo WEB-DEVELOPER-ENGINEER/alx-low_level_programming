@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations
+ * main - prints all possible combinations and return them
  * print
  */
 
-int main (void)
+int main(void)
 {
 	int z, q;
 
@@ -29,5 +29,6 @@ int main (void)
 		}
 	}
 	putchar('\n');
+	
 	return (0);
 }
