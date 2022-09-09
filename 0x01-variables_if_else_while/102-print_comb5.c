@@ -2,6 +2,7 @@
 
 /**
  * main - prints all possible combinations
+ * print
  */
 
 int main(void)
