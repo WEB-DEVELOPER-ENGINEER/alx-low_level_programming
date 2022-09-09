@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- *
+ * followed by line
  * Return: Always 0 (Success)
  */
 
@@ -13,7 +13,7 @@ int main(void)
 	for (c = 'a'; c <= 'z'; c++)
 	{	
 		putchar(c);
-		putchar('\n');
 	}
+	putchar('\n');
 	return (0);
 }
