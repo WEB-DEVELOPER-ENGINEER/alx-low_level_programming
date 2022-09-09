@@ -3,6 +3,8 @@
 /**
  * main - prints all possible combinations and return them
  * print
+ *
+ * return function 
  */
 
 int main(void)
@@ -29,6 +31,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-	
 	return (0);
 }
