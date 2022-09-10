@@ -2,9 +2,8 @@
 
 /**
  * main - prints all possible combinations and return them
- * print
  *
- * return function 
+ * Return: Always 0 (Success)
  */
 
 int main(void)
