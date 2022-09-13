@@ -5,12 +5,12 @@
  * Returns 1 if c is lowercase and 0 otherwise
  */
 
-int _islower(int c) 
+int _islower(int c)
 {
-	if (97 <= c && c <= 122)
+	if (97 <= c && 122 >= c)
 		return (1);
-	else if (65 <= c && c <= 90)
+	else if (65 <= c && 90 >= c)
 		return (0);
-	else 
+	else
 		return (0);
 }
