@@ -5,7 +5,7 @@
  *
  * @n: integer variable
  *
- * Return: 1 for positive numbers, 0 for 0 and 
+ * Return: 1 for positive numbers, 0 for 0 and
  * -1 for negative numbers
  */
 
