@@ -7,21 +7,16 @@
  * Return: Always 0.
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	void print_alphabet(void)
-	{
-		char i;
-		
-	        for (i = 'a'; i <= 'z'; i++)
-		{
-			_putchar(i);
-			i++;
-		}
-	};
-	_putchar('\n');
+	char i;
 
-	return (0);
+        for (i = 'a'; i <= 'z'; i++)
+	{
+		_putchar(i);
+		i++;
+	}
+	_putchar('\n');
 }
 
 
