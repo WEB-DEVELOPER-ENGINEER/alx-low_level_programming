@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - a function that prints the sign of a number.
+ * print_last_digit - a function that prints the last digit
  *
  * return the last digit
  *
