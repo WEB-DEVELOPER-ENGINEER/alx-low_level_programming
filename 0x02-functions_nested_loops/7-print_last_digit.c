@@ -10,7 +10,14 @@
 
 int print_last_digit(int j)
 {
-	_putchar(j % 10);
+	int n
+
+	if (j < 0)
+		j = -j;
+	n = j % 10;
+	if (n < 0)
+		n = -n;
+	_putchar(n);
 
 	return (0);
 }
