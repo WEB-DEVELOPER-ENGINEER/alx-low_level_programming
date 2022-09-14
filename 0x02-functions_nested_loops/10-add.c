@@ -10,7 +10,7 @@
  * @b: second parameter
  *
  * Return: the result of adding two numbers
- * /
+ */
 
 int add(int a, int b)
 {
