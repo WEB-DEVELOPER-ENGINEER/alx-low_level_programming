@@ -32,5 +32,6 @@ void times_table(void)
 				_putchar((y % 10) + '0');
 			}
 		}
+		_putchar('\n');
 	}
 }
