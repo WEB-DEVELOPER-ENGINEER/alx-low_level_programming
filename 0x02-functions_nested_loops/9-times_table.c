@@ -8,6 +8,7 @@
 void times_table(void)
 {
 	int h, a, y;
+
 	for (h = 0; h < 10; h++)
 	{
 		for (a = 0; a < 10; a++)
@@ -23,7 +24,7 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(y + '0');
-			} 
+			}
 			else if (y >= 10)
 			{
 				_putchar(',');
