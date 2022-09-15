@@ -8,8 +8,8 @@
 
 int _isdigit(int c)
 {
-	if (sizeof(c) == sizeof(int))
+	if (sizeof (c) == sizeof (int))
 		return (1);
 	else
-	return (0);
+		return (0);
 }
