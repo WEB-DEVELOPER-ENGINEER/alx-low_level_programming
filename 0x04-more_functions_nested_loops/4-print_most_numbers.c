@@ -12,7 +12,7 @@ void print_most_numbers(void)
 	for (c = '0'; c <= '9'; c++)
 	{
 		if (c == '4' || c == '2')
-			continue
+			continue;
 		_putchar(c);
 	}
 	_putchar('\n');
