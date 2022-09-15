@@ -2,8 +2,7 @@
 
 /**
  * _isdigit - checks if c is a digit
- * @c: a parameter variable the function checks if 
- * it is a digit and return 1
+ * @c: a parameter takes char or digit
  * Return: 1 if digit and 0 otherwise
  */
 
