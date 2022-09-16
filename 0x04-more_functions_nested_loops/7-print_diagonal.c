@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal -  prints n \
+ * print_diagonal -  prints n diagnoal
  * @n: number of \ to be printed
  */
 
