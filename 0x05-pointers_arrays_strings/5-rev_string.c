@@ -8,7 +8,6 @@
 void rev_string(char *s)
 {
 	int i;
-	int j;
 	int n = 0;
 	int l;
 
@@ -17,7 +16,7 @@ void rev_string(char *s)
 		if (s[i] == 0)
 			break;
 	}
-	for (j = i; j >= 0; j--)
+	for (i; i >= 0; i--)
 	{
 		l = n + 1;
 		for (n = 0; n < l; n++)
