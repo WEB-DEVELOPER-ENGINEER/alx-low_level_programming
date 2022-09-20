@@ -5,7 +5,7 @@
  * @s: char parameter
  */
 
-rev_string(char *s)
+void rev_string(char *s)
 {
 	int i;
 	int j;
@@ -18,7 +18,7 @@ rev_string(char *s)
 	}
 	for (j = i; j >= 0; j--)
 	{
-		for (n = 0; n =< i; n++)
+		for (n = 0; n <= i; n++)
 			s[j] = s[n];
 	}
 }
