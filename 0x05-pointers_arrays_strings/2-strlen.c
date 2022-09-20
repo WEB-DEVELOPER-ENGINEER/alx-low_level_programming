@@ -3,6 +3,7 @@
 /**
  * _strlen - returns the length of a string
  * @s: parameter of char type
+ * return: counter
  */
 
 int _strlen(char *s)
@@ -13,9 +14,9 @@ int _strlen(char *s)
 	for (i = 0; 0 < 1; i++)
 	{
 		if (s[i] != 0)
-			counter ++;
+			counter++;
 		else
 			break;
 	}
-	return counter;
+	return (counter);
 }
