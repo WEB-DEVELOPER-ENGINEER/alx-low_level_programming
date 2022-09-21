@@ -8,7 +8,7 @@
  * @str: char parameter
  */
 
-void rev_string(char *s)
+void puts_half(char *s)
 {
 	int i, len, len1;
 
