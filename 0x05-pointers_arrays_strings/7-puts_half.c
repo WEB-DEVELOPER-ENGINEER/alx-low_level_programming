@@ -27,6 +27,7 @@ void rev_string(char *s)
 		for (i = 0; i < len / 2; i++)
 		{
 			s[i] = s[len1];
+			_putchar(s[i]);
 		}
 	}
 	else
@@ -34,6 +35,7 @@ void rev_string(char *s)
 		for (i = 0; i < len1 / 2; i++)
 		{
 			s[i] = s[len1];
+			_putchar(s[i]);
 		}
 	}
 }
