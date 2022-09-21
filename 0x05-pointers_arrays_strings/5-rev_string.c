@@ -16,15 +16,19 @@ void rev_string(char *s)
 		if (s[i] == 0)
 			break;
 	}
-	for (i = i - 1; i >= 0; i--)
+
+	int j = i - 1;
+
+	while (j >= 0)
 	{
-		if (s[i] != 0)
+		if (s[j] != 0)
 		{
 			l = n + 1;
 			for (n = 0; n < l; n++)
 			{
-				s[n] = s[i];
+				s[n] = s[j];
 			}
 		}
+		j--;
 	}
 }
