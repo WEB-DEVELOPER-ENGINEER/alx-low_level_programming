@@ -24,7 +24,7 @@ void puts_half(char *s)
 
 	if (len1 % 2 == 0)
 	{
-		for (i = 0; i < len / 2; i++)
+		for (i = 0; i < len1 / 2; i++)
 		{
 			s[i] = s[len1];
 			_putchar(s[i]);
@@ -32,7 +32,7 @@ void puts_half(char *s)
 	}
 	else
 	{
-		for (i = 0; i < len1 / 2; i++)
+		for (i = 0; i < (len1 - 1) / 2; i++)
 		{
 			s[i] = s[len1];
 			_putchar(s[i]);
