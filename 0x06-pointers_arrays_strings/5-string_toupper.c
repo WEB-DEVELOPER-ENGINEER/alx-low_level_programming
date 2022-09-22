@@ -12,7 +12,7 @@ char *string_toupper(char *s)
 
 	for (i = 0; 0 < 1; i++)
 	{
-		if (s[i] == 0)
+		if (s[i] == 0 || s[i] == '\n')
 		{
 			break;
 		}
