@@ -19,14 +19,12 @@ char *_strchr(char *s, char c)
 			if (s[i] == c)
 			{
 				pointer = &s[i];
-				break;
+				return (pointer);
 			}
 			else
-				pointer = '\0';
+				return ('\0');
 		}
 	}
 	else
-		pointer = '\0';
-
-	return (pointer);
+		return ('\0');
 }
