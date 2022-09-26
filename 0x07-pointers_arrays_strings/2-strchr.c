@@ -16,7 +16,8 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			pointer = &s[i];
+			pointer = &*(s + i);
+			break;
 		}
 		else
 			pointer = '\0';
