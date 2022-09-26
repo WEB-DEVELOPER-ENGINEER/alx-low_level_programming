@@ -29,10 +29,12 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (j = 0; j < n; j++)
 		{
-			if (s[i] == accept[j])
-				return (s + i);
-			else if (j == (k - 1) && s[i] != accept[j])
-				return ('\0');
+		if (s[i] == accept[j])
+			return (s + i);
+		else if (j == (k - 1) && s[i] != accept[j])
+			return ('\0');
+		else if (i < k && i == (n - 1) && i == j && s[i] != accept[j])
+			return ('\0');
 		}
 	}
 	return ('\0');
