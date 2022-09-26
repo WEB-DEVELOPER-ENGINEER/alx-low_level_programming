@@ -12,16 +12,21 @@ char *_strchr(char *s, char c)
 	int i;
 	char *pointer;
 
-	for (i = 0; s[i] != 0; i++)
+	if (s[0] != 0)
 	{
-		if (s[i] == c)
+		for (i = 0; s[i] != 0; i++)
 		{
-			pointer = &s[i];
-			break;
+			if (s[i] == c)
+			{
+				pointer = &s[i];
+				break;
+			}
+			else
+				pointer = NULL;
 		}
-		else
-			pointer = '\0';
 	}
+	else
+		pointer = NULL;
 
 	return (pointer);
 }
