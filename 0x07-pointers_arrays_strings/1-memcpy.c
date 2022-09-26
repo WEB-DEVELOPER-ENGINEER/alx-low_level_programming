@@ -2,23 +2,21 @@
 
 /**
  * _memcpy - copies memory area
- *
- * @dest: char parameter
- * @src: char parameter
+ * @dest: char parameter destination
+ * @src: char parameter source
  * @n: integer parameter
+ *
  * Return: a pointer to dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
-	char *pointer;
 
-	pointer = dest;
-	for (i = 0; i < n && *(src + i) != 0; i++)
+	for (i = 0; i < n; i++)
 	{
-		*(dest + i) = *(src + i);
+		dest[i] = src[i];
 	}
 
-	return (pointer);
+	return (dest);
 }
