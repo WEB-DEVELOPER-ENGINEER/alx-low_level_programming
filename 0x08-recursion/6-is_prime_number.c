@@ -28,6 +28,6 @@ int not_root(int j, int i)
 	if (square == j)
 		return (0);
 	else if (square < j)
-		return (root(j, i + 1));
+		return (not_root(j, i + 1));
 	return (1);
 }
