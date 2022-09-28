@@ -4,6 +4,10 @@
  * _sqrt_recursion - returns the natural square root
  * @n: integer parameter
  * Return: natural square root of a number
+ * root - computes the root starting from number 1
+ * @j: integer parameter
+ * @i: integer paramer
+ * Return: square root if natural square root, or -1 if not found
  */
 
 int _sqrt_recursion(int n)
