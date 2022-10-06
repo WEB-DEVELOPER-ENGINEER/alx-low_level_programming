@@ -42,12 +42,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		free(s);
 		return (NULL);
 	}
-	for (i = 0; i < k && s1 != NULL; i++)
+	for (i = 0; i <= k && s1 != NULL; i++)
 		s[i] = s1[i];
-	for (i = 0; n > 0 && s2[i] != 0 && i <= n; i++)
+	for (i = 0; s2[i] != 0 && i <= n; i++)
 	{
 		s[k] = s2[i];
-		k++;
+		k = k + 1;
 	}
 	s[k] = '\0';
 	return (s);
