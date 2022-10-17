@@ -12,8 +12,6 @@ char *str, *sep = "";
 va_list list;
 
 	va_start(list, format);
-	
-	
 		while (format[i])
 		{
 			switch (format[i])
@@ -40,7 +38,7 @@ va_list list;
 			sep = ", ";
 			i++;
 		}
-	
+
 	printf("\n");
 	va_end(list);
 }
