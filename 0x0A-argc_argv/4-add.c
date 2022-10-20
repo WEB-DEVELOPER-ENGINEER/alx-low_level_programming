@@ -25,8 +25,10 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		for (a = 'a'; a < 'z'; a++)
+		for (a = '!'; a < '~'; a++)
 		{
+			if ('0' <= a && a <= '9')
+				a = ':';
 			if (*b == *argv[i])
 			{
 				printf("Error\n");
