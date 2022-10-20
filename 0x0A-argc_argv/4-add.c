@@ -13,9 +13,10 @@ int main(int argc, char *argv[])
 {
 	char *b;
 	char a;
-	int i;
+	int i, j;
 	int sum;
 
+	j = 0;
 	b = &a;
 	sum = 0;
 	if (argc <= 1)
@@ -29,10 +30,13 @@ int main(int argc, char *argv[])
 		{
 			if ('0' <= a && a <= '9')
 				a = ':';
-			if (*b == *argv[i])
+			for (j = 0; argv[i][j]; j++)
 			{
-				printf("Error\n");
-				return (1);
+				if (*b == argv[i][j])
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
 		}
 	}
