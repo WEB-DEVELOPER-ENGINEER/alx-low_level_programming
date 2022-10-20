@@ -6,6 +6,7 @@
  * main - adds positive numbers
  * @argc: num of args
  * @argv: array of pointers to str
+ * Return: 1 If one of the number contains symbols else 0
  */
 
 int main(int argc, char *argv[])
