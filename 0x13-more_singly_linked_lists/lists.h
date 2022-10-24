@@ -1,15 +1,16 @@
-#ifndef list
-#define list
+#ifndef list_A
+#define list_A
 
 #include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 
 /**
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
+ *
  * Description: singly linked list node structure
+ * for ALX
  */
 typedef struct listint_s
 {
@@ -28,4 +29,5 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 int sum_listint(listint_t *head);
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
+
 #endif
