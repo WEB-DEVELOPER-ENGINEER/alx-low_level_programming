@@ -2,7 +2,7 @@
 
 /**
  * free_listint2 - frees a listint_t list
- * head: pointer to pointer to listint_t
+ * @head: pointer to pointer to listint_t
  */
 
 void free_listint2(listint_t **head)
@@ -17,5 +17,4 @@ void free_listint2(listint_t **head)
 		free(*head);
 		*head = dum;
 	}
-	*head = NULL;
 }
