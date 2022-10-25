@@ -5,6 +5,7 @@
  * @head: pointer to pointer to listint_t
  * @idx: where the new node should be added
  * @n: data
+ * Return: the new node or NULL
  */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
@@ -24,7 +25,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		if (i == (idx - 1))
 		{
 			dumm = dum->next;
-			dum->next=new;
+			dum->next = new;
 			new->next = dumm;
 			return (new);
 		}
