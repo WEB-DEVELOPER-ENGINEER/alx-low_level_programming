@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "main.h"
 #include <sys/types.h>
 #include <sys/stat.h>
