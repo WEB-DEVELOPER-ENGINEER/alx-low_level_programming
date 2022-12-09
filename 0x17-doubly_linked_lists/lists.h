@@ -30,5 +30,6 @@ int sum_dlistint(dlistint_t *head);
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
 int is_palind(void);
 void find_palind(void);
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
 
 #endif
