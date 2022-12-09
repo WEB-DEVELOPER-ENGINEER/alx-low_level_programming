@@ -48,7 +48,7 @@ int main(void)
 
 						        print_dlistint(head);
 
-							    node = get_dnodeint_at_index(head, 100);
+							    node = get_dnodeint_at_index(head, 0);
 
 							        printf("%d\n", node->n);
 
