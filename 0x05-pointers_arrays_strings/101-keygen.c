@@ -11,7 +11,7 @@ int main(void)
 	srand(time(NULL));
 	for (i = 0, total = 3694; total > 182; i++)
 	{
-		rando = (rand() % 133) + 4;
+		rando = (rand() % 128) + 4;
 		printf("%c", rando);
 		total -= rando;
 	}
