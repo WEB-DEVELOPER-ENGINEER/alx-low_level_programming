@@ -1,5 +1,5 @@
 # Makefile build executable file school
 CC = gcc
-SRC := $(wildcard *.c)
+SRC = $(wildcard *.c)
 all: $(SRC)
 	$(CC) $(SRC) -o school
