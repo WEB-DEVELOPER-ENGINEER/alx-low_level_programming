@@ -1,21 +1,24 @@
 # make
-CC = gcc
-OBJ = $(SRC:%.c=%.o)
-NAME = school
-SRC = main.c school.c
-CFLAGS = -Wall -Werror -Wextra -pedantic
 
-.PHONY: all clean oclean fclean re
+CC = gcc
+SRC = school.c main.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+HEADER = m.h
+CFLAGS = -Werror -Wall -Wextra -pedantic
+
+all: $(HEADER) clean $(NAME)
+
+$(NAME): $(OBJ)
 
 clean:
-	$(RM) *~ $(NAME)
-
-all: m.h $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
-
-fclean:clean oclean
+	$(RM) $(NAME) *~
 
 oclean:
-	$(RM) $(OBJ)
+	$(RM) *.o
 
-re: oclean all
+fclean: clean oclean
+
+re: $(HEADER) oclean $(OBJ)
+
+.PHONY: clean oclean $(CC)
