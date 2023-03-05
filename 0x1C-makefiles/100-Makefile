@@ -21,4 +21,4 @@ fclean: clean oclean
 
 re: $(HEADER) oclean $(OBJ)
 
-.PHONY: clean oclean $(CC)
+.PHONY: clean oclean
