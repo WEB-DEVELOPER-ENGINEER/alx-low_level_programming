@@ -1,5 +1,5 @@
 # Makefile build executable file school
 CC = gcc
-SRC = $(wildcard *.c)
+SRC = main.c holberton.c
 all: $(SRC)
 	$(CC) $(SRC) -o school
