@@ -7,7 +7,7 @@ NAME = school
 HEADER = m.h
 CFLAGS = -Werror -Wall -Wextra -pedantic
 
-all: $(HEADER) clean $(NAME)
+all: $(HEADER) $(NAME)
 
 $(NAME): $(OBJ)
 
