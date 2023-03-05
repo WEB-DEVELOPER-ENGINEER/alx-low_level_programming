@@ -1,7 +1,7 @@
 # Exucutable file with variable and deletes all temporary files
 
 CC = gcc
-SRC = main.c holberton.c
+SRC = main.c school.c
 OBJ = $(SRC:%.c=%.o)
 NAME = school
 RM = rm -f
