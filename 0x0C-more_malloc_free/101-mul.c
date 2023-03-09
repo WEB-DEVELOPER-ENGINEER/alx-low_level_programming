@@ -55,13 +55,11 @@ void *_calloc_buffer(long int num, long int size)
 	{
 		exit(98);
 	}
-
 	size = size * num;
 	ptr = ret;
 	ptr[--size] = 0;
 	while (size--)
 		ptr[size] = '0';
-
 	return (ret);
 }
 
@@ -108,7 +106,6 @@ int main(int ac, char **av)
 	len2 = numstrchk(av[2]);
 	lenres = len1 + len2;
 	res = _calloc_buffer(lenres + 1, sizeof(char));
-
 	for (i = lenres - 1, len1--; len1 >= 0; len1--, i += len2 - 1)
 		for (j = len2 - 1; j >= 0; j--, i--)
 		{
