@@ -1,5 +1,5 @@
 #include <stdlib.h>
-
+#include "main.h"
 /**
  * _prntstr - prints a string
  * @s: string to print
