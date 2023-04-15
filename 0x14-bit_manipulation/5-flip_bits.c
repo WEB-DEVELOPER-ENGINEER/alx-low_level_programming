@@ -12,6 +12,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int i, j = 0, k = 0;
 
+	if (n == m)
+		return (0);
 	i = n & m;
 	while (n)
 	{
@@ -31,7 +33,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	{
 		while (i)
 		{
-			k += i & 1;
+			k += (i & 1);
 			i >>= 1;
 		}
 	}
